@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DEE62822611837DA698EE45 /* libPods-MasonryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C5427FB1BB0532289C0907 /* libPods-MasonryTest.a */; };
 		27D86E39243C268300EA3057 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E38243C268300EA3057 /* AppDelegate.m */; };
 		27D86E3C243C268300EA3057 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E3B243C268300EA3057 /* SceneDelegate.m */; };
 		27D86E3F243C268300EA3057 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E3E243C268300EA3057 /* ViewController.m */; };
@@ -14,9 +15,11 @@
 		27D86E44243C268900EA3057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D86E43243C268900EA3057 /* Assets.xcassets */; };
 		27D86E47243C268900EA3057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D86E45243C268900EA3057 /* LaunchScreen.storyboard */; };
 		27D86E4A243C268900EA3057 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E49243C268900EA3057 /* main.m */; };
+		27D86E52243C39B000EA3057 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E51243C39B000EA3057 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076A019499481EB76085AFA2 /* Pods-MasonryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.debug.xcconfig"; path = "Target Support Files/Pods-MasonryTest/Pods-MasonryTest.debug.xcconfig"; sourceTree = "<group>"; };
 		27D86E34243C268300EA3057 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D86E37243C268300EA3057 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27D86E38243C268300EA3057 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		27D86E46243C268900EA3057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27D86E48243C268900EA3057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D86E49243C268900EA3057 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27D86E50243C39B000EA3057 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		27D86E51243C39B000EA3057 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		91C5427FB1BB0532289C0907 /* libPods-MasonryTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B67683B8CB86B4342CFC1F /* Pods-MasonryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.release.xcconfig"; path = "Target Support Files/Pods-MasonryTest/Pods-MasonryTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEE62822611837DA698EE45 /* libPods-MasonryTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,8 @@
 			children = (
 				27D86E36243C268300EA3057 /* MasonryTest */,
 				27D86E35243C268300EA3057 /* Products */,
+				560B54A169A9FA3BFF6DDFA3 /* Pods */,
+				BB4BEB5B2CD02D75B8A72432 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +82,27 @@
 				27D86E45243C268900EA3057 /* LaunchScreen.storyboard */,
 				27D86E48243C268900EA3057 /* Info.plist */,
 				27D86E49243C268900EA3057 /* main.m */,
+				27D86E50243C39B000EA3057 /* SecondViewController.h */,
+				27D86E51243C39B000EA3057 /* SecondViewController.m */,
 			);
 			path = MasonryTest;
+			sourceTree = "<group>";
+		};
+		560B54A169A9FA3BFF6DDFA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				076A019499481EB76085AFA2 /* Pods-MasonryTest.debug.xcconfig */,
+				C2B67683B8CB86B4342CFC1F /* Pods-MasonryTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB4BEB5B2CD02D75B8A72432 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C5427FB1BB0532289C0907 /* libPods-MasonryTest.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27D86E4D243C268900EA3057 /* Build configuration list for PBXNativeTarget "MasonryTest" */;
 			buildPhases = (
+				CC22AC7F679A9E3DC65E8E71 /* [CP] Check Pods Manifest.lock */,
 				27D86E30243C268300EA3057 /* Sources */,
 				27D86E31243C268300EA3057 /* Frameworks */,
 				27D86E32243C268300EA3057 /* Resources */,
@@ -141,11 +171,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CC22AC7F679A9E3DC65E8E71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MasonryTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27D86E30243C268300EA3057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D86E52243C39B000EA3057 /* SecondViewController.m in Sources */,
 				27D86E3F243C268300EA3057 /* ViewController.m in Sources */,
 				27D86E39243C268300EA3057 /* AppDelegate.m in Sources */,
 				27D86E4A243C268900EA3057 /* main.m in Sources */,
@@ -287,6 +343,7 @@
 		};
 		27D86E4E243C268900EA3057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076A019499481EB76085AFA2 /* Pods-MasonryTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +360,7 @@
 		};
 		27D86E4F243C268900EA3057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B67683B8CB86B4342CFC1F /* Pods-MasonryTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
