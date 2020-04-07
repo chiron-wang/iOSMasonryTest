@@ -50,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		276F764E243C560400B7BA83 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				27D86E3D243C268300EA3057 /* ViewController.h */,
+				27D86E3E243C268300EA3057 /* ViewController.m */,
+				27D86E50243C39B000EA3057 /* SecondViewController.h */,
+				27D86E51243C39B000EA3057 /* SecondViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		27D86E2B243C268300EA3057 = {
 			isa = PBXGroup;
 			children = (
@@ -71,19 +82,16 @@
 		27D86E36243C268300EA3057 /* MasonryTest */ = {
 			isa = PBXGroup;
 			children = (
+				276F764E243C560400B7BA83 /* ViewControllers */,
 				27D86E37243C268300EA3057 /* AppDelegate.h */,
 				27D86E38243C268300EA3057 /* AppDelegate.m */,
 				27D86E3A243C268300EA3057 /* SceneDelegate.h */,
 				27D86E3B243C268300EA3057 /* SceneDelegate.m */,
-				27D86E3D243C268300EA3057 /* ViewController.h */,
-				27D86E3E243C268300EA3057 /* ViewController.m */,
 				27D86E40243C268300EA3057 /* Main.storyboard */,
 				27D86E43243C268900EA3057 /* Assets.xcassets */,
 				27D86E45243C268900EA3057 /* LaunchScreen.storyboard */,
 				27D86E48243C268900EA3057 /* Info.plist */,
 				27D86E49243C268900EA3057 /* main.m */,
-				27D86E50243C39B000EA3057 /* SecondViewController.h */,
-				27D86E51243C39B000EA3057 /* SecondViewController.m */,
 			);
 			path = MasonryTest;
 			sourceTree = "<group>";
