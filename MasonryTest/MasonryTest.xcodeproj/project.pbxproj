@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DEE62822611837DA698EE45 /* libPods-MasonryTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C5427FB1BB0532289C0907 /* libPods-MasonryTest.a */; };
+		27B726DB243E0C590065A429 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B726DA243E0C590065A429 /* ThirdViewController.m */; };
 		27D86E39243C268300EA3057 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E38243C268300EA3057 /* AppDelegate.m */; };
 		27D86E3C243C268300EA3057 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E3B243C268300EA3057 /* SceneDelegate.m */; };
 		27D86E3F243C268300EA3057 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D86E3E243C268300EA3057 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		076A019499481EB76085AFA2 /* Pods-MasonryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryTest.debug.xcconfig"; path = "Target Support Files/Pods-MasonryTest/Pods-MasonryTest.debug.xcconfig"; sourceTree = "<group>"; };
+		27B726D9243E0C590065A429 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		27B726DA243E0C590065A429 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		27D86E34243C268300EA3057 /* MasonryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D86E37243C268300EA3057 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27D86E38243C268300EA3057 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +60,8 @@
 				27D86E3E243C268300EA3057 /* ViewController.m */,
 				27D86E50243C39B000EA3057 /* SecondViewController.h */,
 				27D86E51243C39B000EA3057 /* SecondViewController.m */,
+				27B726D9243E0C590065A429 /* ThirdViewController.h */,
+				27B726DA243E0C590065A429 /* ThirdViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			files = (
 				27D86E52243C39B000EA3057 /* SecondViewController.m in Sources */,
 				27D86E3F243C268300EA3057 /* ViewController.m in Sources */,
+				27B726DB243E0C590065A429 /* ThirdViewController.m in Sources */,
 				27D86E39243C268300EA3057 /* AppDelegate.m in Sources */,
 				27D86E4A243C268900EA3057 /* main.m in Sources */,
 				27D86E3C243C268300EA3057 /* SceneDelegate.m in Sources */,

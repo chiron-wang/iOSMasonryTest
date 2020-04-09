@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "Masonry.h"
+#import "ThirdViewController.h"
 
 @interface SecondViewController ()
 
@@ -74,6 +75,28 @@
         make.bottom.equalTo(lastView.mas_bottom);
     }];
     
+    UIButton *thirdButton = [[UIButton alloc] init];
+    thirdButton.layer.cornerRadius = 25;
+    [thirdButton addTarget:self action:@selector(thirdButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [thirdButton setTitle:@"third" forState:UIControlStateNormal];
+    [thirdButton setBackgroundColor:[UIColor lightGrayColor]];
+    [self.view addSubview:thirdButton];
+    [thirdButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(sv.mas_bottom).offset(120);
+        make.centerX.equalTo(self.view);
+        make.width.mas_equalTo(100);
+        make.height.mas_equalTo(100);
+    }];
+    
+//    [thirdButton sendActionsForControlEvents:UIControlEventTouchUpInside];    
+}
+
+- (void) thirdButtonPressed: (id)sender {
+    NSLog(@"next button have been clicked.");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    SecondViewController *thirdVC = [storyboard instantiateViewControllerWithIdentifier:@"thirdVC"];
+    
+    [self.navigationController pushViewController:thirdVC animated:YES];
 }
 
 /*

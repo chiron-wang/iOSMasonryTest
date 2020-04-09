@@ -90,6 +90,8 @@
         make.width.mas_equalTo(100);
         make.height.mas_equalTo(100);
     }];
+    
+    //[nextButton sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void) nextButtonPressed: (id)sender {
