@@ -31,7 +31,6 @@
     [viewB mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view).insets(UIEdgeInsetsMake(100, 50, 50, 50));
     }];
-    
     UILabel *labelB = [UILabel new];
     labelB.text = @"viewB";
     [viewB addSubview:labelB];
@@ -45,9 +44,8 @@
     viewC.backgroundColor = [UIColor yellowColor];
     [viewB addSubview:viewC];
     [viewC mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(viewB).insets(UIEdgeInsetsMake(200, 20, 20, 80));
+        make.edges.equalTo(viewB).insets(UIEdgeInsetsMake(200, 20, 50, 50));
     }];
-    
     UILabel *labelC = [UILabel new];
     labelC.text = @"viewC";
     [viewC addSubview:labelC];
@@ -69,11 +67,46 @@
     labelD.text = @"viewD";
     [viewD addSubview:labelD];
     [labelD mas_makeConstraints:^(MASConstraintMaker *make) {
+        // make.centerY.equalTo(viewD);
+        make.centerX.equalTo(viewD);
+        make.bottom.equalTo(viewD.mas_bottom);
+        make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
+    
+    // case2 [insertSubview: aboveSubview:];
+    UIView *viewE = [UIView new];
+    viewE.backgroundColor = [UIColor redColor];
+    [viewB insertSubview:viewE aboveSubview:viewC];
+    [viewE mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(viewC).insets(UIEdgeInsetsMake(100, 10, 50, 10));
+    }];
+    UILabel *labelE = [UILabel new];
+    labelE.text = @"viewE";
+    [viewE addSubview:labelE];
+    [labelE mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(viewD);
         make.centerY.equalTo(viewD);
         make.size.mas_equalTo(CGSizeMake(50, 50));
     }];
     
+    // case3 [insertSubview: belowSubview:];
+    UIView *viewF = [UIView new];
+    viewF.backgroundColor = [UIColor orangeColor];
+    [viewB insertSubview:viewF belowSubview:viewE];
+    [viewF mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(viewC).offset(80);
+        make.left.equalTo(viewC).offset(30);
+        make.bottom.equalTo(viewC).offset(-10);
+        make.right.equalTo(viewC).offset(-50);
+    }];
+    UILabel *labelF = [UILabel new];
+    labelF.text = @"viewF";
+    [viewF addSubview:labelF];
+    [labelF mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(viewF);
+        make.bottom.equalTo(viewF);
+        make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
 }
 
 /*
